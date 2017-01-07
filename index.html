@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container-fluid">
+  <header>
+    <div class="row">
+      <h1 class="text-center">Stock Profit Calculator</h1>
+      <p class="text-center">This calculator will calculate potential profits and losses based upon the parameters you choose.</p>
+    </div>
+  </header>
+
+  <div class="container container-fluid">
+    <div class"input">
+      <form class="well well-lg">
+        <div class="text-center">
+
+          <div class="input-group">
+
+            <span class="input-group-addon">$</span>
+            <input type="number" name="userAccount" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Account Balance" id="userAccount">
+            <span class="input-group-addon">.00</span>
+          </div>
+
+          <div class="input-group">
+
+            <span class="input-group-addon">$</span>
+            <input type="number" name="entryPrice" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Stock Share Price" id="entryPrice">
+            <span class="input-group-addon">.00</span>
+          </div>
+
+          <button id="enter" class="btn btn-primary btn-lg btn-block" href="#calculate">Calculate</button>
+
+        </div>
+      </form>
+    </div>
+    <div class="output table-responsive well well-lg" name="display" id="outputSection">
+
+      <div id="outputList" class="table table-bordered">
+
+        <div class="active">
+          <section><h4 class="text-center">Amount allowed for the trade</h4></section>
+          <section id="allowedPerTrade" class="text-center"></section>
+        </div>
+
+        <div class="active">
+          <section><h4 class="text-center">Amount of shares for the trade</section>
+          <section id="sharesPerTrade" class="text-center"></section>
+        </div>
+
+        <div class="success">
+          <section><h4 class="text-center">Limit price for exiting trade</h4></section>
+          <section id="targetLimit" class="text-center"></section>
+        </div>
+
+        <div class="warning">
+          <section><h4 class="text-center">Stop price for exiting trade</h4></section>
+          <section id="targetStop" class="text-center"></section>
+        </div>
+
+        <div class="success">
+          <section><h4 class="text-center">Possible profit for the trade</h4></section>
+          <section id="possibleProfit"class="text-center"></section>
+        </div>
+
+        <div class="danger">
+          <section><h4 class="text-center">Possible Loss for the trade</h4></section>
+          <section id="possibleLoss" class="text-center"></section>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>I have pre deteremined the risk vs reward to 3:1 this is based on how I personally manage risk per trade.</p>
+    <p>This calculator is no guarentee of results and is figured upon your inputs. Follow this calculator at your own risk. It's your money and your responsiblity</p>
+
+  </footer>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

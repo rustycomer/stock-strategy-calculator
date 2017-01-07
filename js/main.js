@@ -31,7 +31,7 @@ $( document ).ready(function() {
      var limit = (userAccount * .03) / sharesPerTrade;
      var targetLimit = Number.parseFloat(limit) + Number.parseInt(entryPrice);
      $("#targetLimit").html(function(){
-       //targetLimit = targetLimit.toFixed(2);
+       targetLimit = targetLimit.toFixed(2);
        return targetLimit;
      });
 
@@ -39,7 +39,7 @@ $( document ).ready(function() {
      var stop = (userAccount * .01) / sharesPerTrade;
      var targetStop = Number.parseInt(entryPrice) - Number.parseFloat(stop);
      $("#targetStop").html(function(){
-       //targetStop = targetStop.toFixed(2);
+       targetStop = targetStop.toFixed(2);
        return targetStop;
      });
 

@@ -29,7 +29,8 @@ $( document ).ready(function() {
 
      //Calculate limit exit price at 3% above entry
      var limit = (userAccount * .03) / sharesPerTrade;
-     var targetLimit = Number.parseFloat(limit) + Number.parseInt(entryPrice);
+     limit = limit.toFixed(2);
+     var targetLimit = Number.parseFloat(limit) + Number.parseFloat(entryPrice);
      $("#targetLimit").html(function(){
        targetLimit = targetLimit.toFixed(2);
        return targetLimit;
@@ -37,7 +38,7 @@ $( document ).ready(function() {
 
      //Calculate stop exit price at 1% below entry
      var stop = (userAccount * .01) / sharesPerTrade;
-     var targetStop = Number.parseInt(entryPrice) - Number.parseFloat(stop);
+     var targetStop = Number.parseFloat(entryPrice) - Number.parseFloat(stop);
      $("#targetStop").html(function(){
        targetStop = targetStop.toFixed(2);
        return targetStop;

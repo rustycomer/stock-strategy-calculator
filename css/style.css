@@ -70,6 +70,7 @@ footer {
  padding-bottom: 5px;
  margin: auto;
  text-align: center;
+ font-weight: 300;
 }
 
 .social-icon {
@@ -110,7 +111,8 @@ form {
   padding: 20px 24px;
   background: #f4f7f8;
   margin: auto;
-
+  font-family: 'Roboto', 'Open Sans', 'Raleway';
+  font-weight: 300;
 }
 label {
   display: block;

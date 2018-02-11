@@ -1,223 +1,24 @@
-/****************************************************
-GENERAL
-*****************************************************/
-
-body{
-  display: block;
-  margin:auto;
-  padding-top: 0;
-  font-family: 'Roboto','Open-Sans', 'raleway', 'ubuntu', Helvetica, sans-serif;
-  font-size: 2em;
+.app {
+  padding: 1em;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  text-align: center;
-}
-th {
-  text-align: center;
-}
-hr {
-  color: #333;
-}
-
-table {
-  margin:auto;;
-
-}
-
-/****************************************************
-HEADING
-*****************************************************/
-
-
-header{
-  text-align: center;
-  padding-top: 0;
-  padding-bottom: 5em;
-}
-
-#title {
-  background-color: #303F9F;
-  color: #fff;
-  font-weight: 300;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#subtitle {
-  background-color: #303F9F;
-  margin-top: 0;
-  color: #fff;
-  font-weight: 300;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 0px;
-}
-.site-logo{
-width: 150px;
-
-
-}
-
-/****************************************************
-FOOTER
-*****************************************************/
-footer {
- width: auto;
- padding-top: 10px;
- padding-bottom: 5px;
- margin: auto;
- text-align: center;
- font-weight: 300;
-}
-
-.social-icon {
-  height: 20px;
-  width: 20px;
-}
-
-.social-icon-list {
-  display: inline-block;
-  text-align: center;
-}
-
-
-
-/*********************************************
-Input and Display
-***********************************************/
-
-.output {
-  display: flex;
-  flex-flow: column;
-}
-
-ul{
-
-
-  list-style: none;
-  margin: auto;
-}
-
-li{
-  text-align: center;
-  padding: 10px;
-}
-
-form {
-  text-align: center;
-  padding: 20px 24px;
-  background: #f4f7f8;
-  margin: auto;
-  font-family: 'Roboto', 'Open Sans', 'Raleway';
-  font-weight: 300;
-}
-label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-label:last-of-type {
- margin-top: 1.1em;
-}
-input,
- textarea{
-  outline: 0;
-	border: none;
-	padding: 15px;
-	border-radius: .3em;
-	border-bottom: 3px solid rgba(0,0,0,0.05);
-  display: inline-block;
-  margin: auto;
-}
-input[type="number"],
- {
-
-	font-size: 1em;
-  color: #222;
-  font-weight: 300;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.2em;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
-  padding: 5px;
-}
-form > a {
-  font-size: .85em;
-}
-
-input:focus,
-textarea:focus {
-  border-color: blue;
-}
-
-
-.btn {
-  display: inline-block;
-  font-size: 1em;
-	font-weight: 400;
-  cursor: pointer;
-  color: #fff;
-  margin: 1em;
-	width: auto;
-  height: auto;
-  background-color: #3F51B5;
-  font-weight: 300;
-}
-.btn:hover {
-  opacity: .75;
-}
-.default {
-  background-color: #333;
-}
-.error {
-  background-color: #ff784f;
-}
-
-.input-group {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-/****************************************************
-MEDIA QUERIES
-*****************************************************/
-
-@media (min-width: 769px) {
-  .main-header {
-    height: 200px;
-    justify-content: flex-end;
-
+.social-icons {
+    list-style-type: none;
   }
 
-  .social-icon {
-    height: 25px;
-    width: 25px;
-  }
-  .site-logo {
-    width: 250px;
-  }
+.social-img {
+  max-width: 2em;
 }
 
-@media (min-width: 1025px) {
-  header {
-    flex-direction: row;
+#logo {
+  max-width: 10em;
+}
+
+@media (min-width: 825px) {
+  .app {
+    max-width: 50em;
   }
-
-  form {
-    width: 500px;
+  #logo {
+    max-width: 20em;
   }
-
-  .social-icon {
-    height: 30px;
-    width: 30px;
-  }
-
-  title,
-  footer {
-    text-align: center;
-  }
-
-
 }
